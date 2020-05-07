@@ -1,0 +1,86 @@
+@media only screen and (max-width: 850px) {
+  .hero {
+    margin-top: 0px;
+  }
+}
+@media only screen and (min-width: 850px) {
+  .hero {
+    margin-top: 50px;
+  }
+  .coach-desc {
+    padding: 20px 25% 50px 25%;
+  }
+}
+body {
+  margin: 0;
+  background-color: gray;
+}
+.hero {
+  height: 400px;
+  background-color: black;
+  background-position: center;
+  background-size: cover;
+  background-image: url("/images/coacheshero.jpg");
+  text-align: center;
+  color: white;
+  font-size: 200%;
+  line-height: 400px;
+}
+.coach-imgs {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  background-color: rgb(175, 175, 175);
+}
+#mccormic,
+#hodge {
+  cursor: pointer;
+  margin: 0 20px 0 20px;
+  padding: 10px;
+  display: grid;
+  justify-items: center;
+  font-weight: bold;
+  font-size: 150%;
+}
+.image {
+  grid-row: 1;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  background-size: cover;
+  background-position: center;
+  color: transparent;
+  box-shadow: gray 0 0 10px;
+  border: 1px solid white;
+
+  -webkit-transition: border 750ms ease-out;
+  -ms-transition: border 750ms ease-out;
+  transition: border 750ms ease-out;
+}
+.image:hover {
+  border: 1px solid goldenrod;
+  -webkit-transition: border 750ms ease-out;
+  -ms-transition: border 750ms ease-out;
+  transition: border 750ms ease-out;
+}
+.text {
+  text-align: center;
+  grid-row: 2;
+  margin-top: 10px;
+}
+#mccormic .image {
+  background-image: url("/images/cormic.png");
+}
+#hodge .image {
+  background-image: url("/images/hodge.jpeg");
+}
+.coach-desc {
+  text-align: center;
+  font-size: 150%;
+}
+#mccormic-desc {
+  display: none;
+}
+#hodge-desc {
+  display: none;
+}

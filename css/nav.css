@@ -1,0 +1,228 @@
+@keyframes condition {
+  0% {
+    background-color: rgb(24, 24, 24);
+  }
+}
+body {
+  font-family: "Quicksand", sans-serif;
+  margin: 0;
+}
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: rgb(44, 44, 44);
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: green;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: goldenrod;
+}
+@media only screen and (min-width: 850px) {
+  .nav-container {
+    animation: condition 2000ms ease-out;
+    animation-fill-mode: forwards;
+    top: 0;
+    display: flex;
+    height: 50px;
+    background-color: #333;
+    width: 100%;
+    position: fixed;
+    align-items: stretch;
+    line-height: 50px;
+    justify-items: stretch;
+    z-index: 1000;
+  }
+  .nav {
+    font-size: 1.25rem;
+    color: white;
+    text-decoration: none;
+
+    /*Animation*/
+    -webkit-transition: background-color 750ms linear;
+    -ms-transition: background-color 750ms linear;
+    transition: background-color 750ms linear;
+  }
+  .dropdown-items {
+    display: none;
+    pointer-events: none;
+  }
+  #nav-button {
+    position: absolute;
+    display: none;
+  }
+
+  #sec1 {
+    flex: 0.3;
+    padding: 5px;
+  }
+  #sec1 img {
+    height: 40px;
+    width: 40px;
+  }
+  #sec2 {
+    padding-left: 10px;
+    flex: 6;
+    text-align: left;
+  }
+
+  #sec3,
+  #sec4,
+  #sec5,
+  #sec6 {
+    flex: 1;
+    text-align: center;
+  }
+
+  #sec3:hover,
+  #sec4:hover,
+  #sec5:hover,
+  #sec6:hover {
+    background-color: green;
+    -webkit-transition: background-color 750ms linear;
+    -ms-transition: background-color 750ms linear;
+    transition: background-color 750ms linear;
+  }
+  /*Navigation bar*/
+
+  /*Copyright bar*/
+  #copyright {
+    color: white;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    margin-bottom: 0;
+    padding: 10px;
+    height: 20px;
+    line-height: 20px;
+    font-size: 1rem;
+    z-index: 999;
+    border-top: 1px dashed black;
+    background-color: #333;
+  }
+  /*Copyright bar*/
+}
+@media only screen and (max-width: 850px) {
+  .nav-container {
+    width: 100%;
+    z-index: 1000;
+    display: flex;
+    flex-direction: row;
+    background-color: #333;
+    justify-content: space-evenly;
+    height: 5em;
+    align-items: center;
+  }
+
+  #sec1 img {
+    padding: 0.5em;
+    width: 4em;
+    height: 4em;
+  }
+
+  #sec2 {
+    color: white;
+    font-family: "Oswald", sans-serif;
+    font-size: 150%;
+  }
+
+  #nav-button img {
+    width: 20px;
+    height: 20px;
+  }
+
+  #nav-button {
+    padding: 0.5em;
+  }
+  #dropdown-container {
+    display: none;
+    pointer-events: all;
+  }
+  .dropdown-items {
+    text-align: center;
+    color: white;
+    text-decoration: none;
+    -webkit-transition: height 750ms ease-out;
+    -ms-transition: height 750ms ease-out;
+    transition: height 750ms ease-out;
+  }
+  .dropdown-items div {
+    line-height: 40px;
+  }
+  #dd1 div {
+    background-color: rgb(56, 56, 56);
+    /*Animation*/
+    -webkit-transition: background-color 750ms linear;
+    -ms-transition: background-color 750ms linear;
+    transition: background-color 750ms linear;
+  }
+  #dd2 div {
+    background-color: rgb(68, 67, 67);
+    /*Animation*/
+    -webkit-transition: background-color 750ms linear;
+    -ms-transition: background-color 750ms linear;
+    transition: background-color 750ms linear;
+  }
+  #dd3 div {
+    background-color: rgb(75, 75, 75);
+    /*Animation*/
+    -webkit-transition: background-color 750ms linear;
+    -ms-transition: background-color 750ms linear;
+    transition: background-color 750ms linear;
+  }
+  #dd4 div {
+    background-color: rgb(87, 87, 87);
+    /*Animation*/
+    -webkit-transition: background-color 750ms linear;
+    -ms-transition: background-color 750ms linear;
+    transition: background-color 750ms linear;
+  }
+  #dd1 div:hover,
+  #dd2 div:hover,
+  #dd3 div:hover,
+  #dd4 div:hover {
+    background-color: green;
+    /*Animation*/
+    -webkit-transition: background-color 750ms linear;
+    -ms-transition: background-color 750ms linear;
+    transition: background-color 750ms linear;
+  }
+  .dropdown-items div:hover {
+    background-color: green;
+  }
+
+  #nav-button:hover {
+    background-color: rgb(73, 73, 73);
+  }
+
+  #sec3,
+  #sec4,
+  #sec5,
+  #sec6 {
+    position: absolute;
+    visibility: hidden;
+    text-align: center;
+  }
+
+  #copyright {
+    color: white;
+    bottom: 0;
+    text-align: center;
+    margin-bottom: 0;
+    padding: 10px;
+    height: 20px;
+    line-height: 20px;
+    font-size: 1rem;
+    z-index: 999;
+    border-top: 1px dashed black;
+    background-color: #333;
+  }
+}

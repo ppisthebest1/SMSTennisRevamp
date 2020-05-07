@@ -1,0 +1,78 @@
+body {
+    background-color: gray;
+}
+
+#storeInputDiv {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  margin-top: 75px;
+  height: 200px;
+  width: 100%;
+  background-color: rgb(8, 92, 8);
+  border-top: 1px solid black;
+    border-bottom: 1px solid black;
+}
+#storeInput {
+  margin: 10px 0px 10px 0px;
+  background-image: url(../images/search.png);
+  background-size: 30px;
+  background-position: 10px;
+  background-repeat: no-repeat;
+  font-size: 20px;
+  border: 2px solid black;
+  padding: 10px 10px 10px 45px;
+  border-radius: 10px;
+  width: 455px;
+}
+
+#storeInput:focus {
+    outline-width: 0px;
+}
+
+#storeInputInfo {
+  font-size: 25px;
+  font-weight: bold;
+  color: white;
+}
+
+#storeInputResults {
+    color: white;
+    font-size: 20px;
+}
+
+#store-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+  margin: 25px 20px 50px 20px;
+}
+
+.price {
+  color: goldenrod;
+  font-size: 25px;
+  font-weight: bold;
+}
+
+.item {
+  padding: 20px;
+  background-color: #333;
+  border-radius: 25px;
+  display: flex;
+  flex-direction: column;
+  margin: 10px;
+  text-align: center;
+  color: white;
+  font-size: 20px;
+  transition: all .5s ease;
+}
+
+.item div img {
+  border-radius: 10px;
+  width: 100%;
+}
+
+.item:hover {
+    background-color: rgb(61, 61, 61);
+    cursor: pointer;
+}
