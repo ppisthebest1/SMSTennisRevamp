@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Raiders Tennis</title>
+    <link rel="stylesheet" href="../css/coaches.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Oswald:wght@500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../css/nav.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Quicksand&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- Navigation Bar -->
+    <nav class="nav-container">
+      <div id="sec1"><img src="/images/smslogo.png" /></div>
+
+      <div class="nav" id="sec2">Shawnee Mission South Tennis</div>
+
+      <a class="nav" id="sec3" href="../index.html"><div>Home</div></a>
+
+      <a
+        class="nav"
+        id="sec4"
+        style="border-bottom: 4px solid goldenrod;"
+        href="/html/coaches.html"
+        ><div>Coaches</div></a
+      >
+
+      <a class="nav" id="sec5" href="/html/rules.html"><div>Rules</div></a>
+
+      <a class="nav" id="sec6" href="/html/store.html"><div>Store</div></a>
+      <div id="nav-button">
+        <img src="../images/menuicon.png" />
+      </div>
+    </nav>
+
+    <div id="dropdown-container">
+      <a class="dropdown-items" id="dd1" href="../index.html"
+        ><div class="items-div">Home</div></a
+      >
+      <a class="dropdown-items" id="dd2" href="/html/coaches.html"
+        ><div class="items-div">Coaches</div></a
+      >
+      <a class="dropdown-items" id="dd3" href="/html/rules.html"
+        ><div class="items-div">Rules</div></a
+      >
+      <a class="dropdown-items" id="dd4" href="/html/store.html"
+        ><div class="items-div">Store</div></a
+      >
+    </div>
+
+    <div class="hero">Coaches</div>
+
+    <div class="coach-imgs">
+      <div id="mccormic" onclick="showDescription('mccormic')">
+        <div class="image">Coach Julie McCormic</div>
+        <div class="text">Coach Julie McCormic</div>
+      </div>
+      <div id="hodge" onclick="showDescription('hodge')">
+        <div class="image">Coach Kurt Hodge</div>
+        <div class="text">Coach Kurt Hodge</div>
+      </div>
+    </div>
+
+    <div class="coach-desc">
+      <div id="mccormic-desc">
+        McCormic teaches biology on the third floor. She manages/coaches the
+        men's varsity tennis team, and is a junior varsity coach on the women's
+        tennis team.
+      </div>
+      <div id="hodge-desc">
+        Hodge teaches general chemistry, honors chemistry, and AP chemistry on
+        the second floor. He manages/coaches the women's varsity tennis team,
+        and is a junior varsity coach on the men's tennis team.
+      </div>
+    </div>
+
+    <p id="copyright">
+      ©Copyright Shawnee Mission South. All Rights Reserved.
+    </p>
+
+    <script src="../js/coaches.js"></script>
+  </body>
+</html>

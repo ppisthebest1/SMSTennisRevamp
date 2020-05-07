@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../css/store.css" />
+    <link rel="stylesheet" href="../css/nav.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Oswald:wght@500&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Quicksand&display=swap"
+      rel="stylesheet"
+    />
+    <title>Raiders Tennis</title>
+  </head>
+  <body>
+    <!-- Navigation Bar -->
+    <nav class="nav-container">
+      <div id="sec1"><img src="/images/smslogo.png" /></div>
+
+      <div class="nav" id="sec2">Shawnee Mission South Tennis</div>
+
+      <a class="nav" id="sec3" href="../index.html"><div>Home</div></a>
+
+      <a class="nav" id="sec4" id="active" href="/html/coaches.html"
+        ><div>Coaches</div></a
+      >
+
+      <a class="nav" id="sec5" href="/html/rules.html"><div>Rules</div></a>
+
+      <a
+        class="nav"
+        id="sec6"
+        href="/html/store.html"
+        style="border-bottom: 4px solid goldenrod;"
+        ><div>Store</div></a
+      >
+      <div id="nav-button">
+        <img src="../images/menuicon.png" />
+      </div>
+    </nav>
+
+    <div id="dropdown-container">
+      <a class="dropdown-items" id="dd1" href="../index.html"
+        ><div>Home</div></a
+      >
+      <a class="dropdown-items" id="dd2" href="/html/coaches.html"
+        ><div>Coaches</div></a
+      >
+      <a class="dropdown-items" id="dd3" href="/html/rules.html"
+        ><div>Rules</div></a
+      >
+      <a class="dropdown-items" id="dd4" href="/html/store.html"
+        ><div>Store</div></a
+      >
+    </div>
+
+    <!-- Search Bar -->
+    <div id="storeInputDiv">
+      <div id="storeInputInfo">Shawnee Mission South Tennis Spiritwear</div>
+      <input
+        type="text"
+        id="storeInput"
+        onkeyup="inputFunction()"
+        placeholder="Search for an item..."
+      />
+      <div id="storeInputResults">Showing all results.</div>
+    </div>
+
+    <!-- Content -->
+    <div id="store-container">
+      <div class="item">
+        <div><img src="../images/clothing/cottonlongt.png" /></div>
+        <div class="itemName">Long Sleeve T-Shirt</div>
+        <div class="price">$13.00</div>
+      </div>
+      <div class="item">
+        <div><img src="../images/clothing/cottont.png" /></div>
+        <div class="itemName">T-Shirt</div>
+        <div class="price">$10.00</div>
+      </div>
+      <div class="item">
+        <div><img src="../images/clothing/hat.png" /></div>
+        <div class="itemName">Adjustable Hat</div>
+        <div class="price">$20.00</div>
+      </div>
+      <div class="item">
+        <div><img src="../images/clothing/hybrid.png" /></div>
+        <div class="itemName">Qualifier Hybrid 1/4 Zip</div>
+        <div class="price">$47.00</div>
+      </div>
+      <div class="item">
+        <div><img src="../images/clothing/joggers.jpeg" /></div>
+        <div class="itemName">Joggers</div>
+        <div class="price">$30.00</div>
+      </div>
+      <div class="item">
+        <div><img src="../images/clothing/longunofirm.png" /></div>
+        <div class="itemName">Locker T-Shirt</div>
+        <div class="price">$25.00</div>
+      </div>
+      <div class="item">
+        <div><img src="../images/clothing/longzip.png" /></div>
+        <div class="itemName">Long Sleeve 1/4 Zip</div>
+        <div class="price">$32.00</div>
+      </div>
+      <div class="item">
+        <div><img src="../images/clothing/shorts.jpeg" /></div>
+        <div class="itemName">Shorts</div>
+        <div class="price">$21.00</div>
+      </div>
+      <div class="item">
+        <div><img src="../images/clothing/headband.jpeg" /></div>
+        <div class="itemName">Sweaty Headband</div>
+        <div class="price">$4.00</div>
+      </div>
+      <div class="item">
+        <div><img src="../images/clothing/sweatshirt.png" /></div>
+        <div class="itemName">Der's Sweatshirt</div>
+        <div class="price">$22.00</div>
+      </div>
+      <div class="item">
+        <div><img src="../images/clothing/sweatshirt2.png" /></div>
+        <div class="itemName">Fleece Hoody</div>
+        <div class="price">$34.00</div>
+      </div>
+      <div class="item">
+        <div><img src="../images/clothing/uniformt.png" /></div>
+        <div class="itemName">Peyton's Performance T-Shirt</div>
+        <div class="price">$21.00</div>
+      </div>
+    </div>
+
+    <!-- Copyright -->
+    <p id="copyright">
+      ©Copyright Shawnee Mission South. All Rights Reserved.
+    </p>
+
+    <script src="../js/store.js"></script>
+    <script src="../styles.js"></script>
+  </body>
+</html>
